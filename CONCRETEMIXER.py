@@ -37,7 +37,7 @@ print(f'we need {masskg:.2f} kg of dry mixed concrete')
 
 # def ratio(cem,san,course):
 #     cem
-ratio =(input('WHat is the ratio of the concrete needed: cement, sand, course_aggr:\n write in this format 1,2,3 :'))
+ratio =(input('WHat is the ratio of the concrete needed: cement, sand, course_aggr:\n write in this format 1,2,3 with commos in between:'))
 cem1 = float(ratio[0])
 sand1 = float (ratio[2])
 ca1 = float(ratio[4])
@@ -45,4 +45,10 @@ sum1 = cem1 + sand1 + ca1
 cement = cem1/sum1* masskg 
 sand = sand1/sum1* masskg
 course = ca1/sum1 *masskg
+
+#WATER NEEDED
+wat = 0.5 * cement  #uit is kg but 1kg of water is appr. equal to 1 litre of water
+
 print(f'We need {cement:.2f} kg of cement, {sand:.2f} kg of sand, and {course:.2f} kg of course aggregate')
+print(f'We also need {wat:.2f} litre of water')
+print('THANK YOU FOR USING THIS PROGRAM \n Muhammad Azhar')
